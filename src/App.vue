@@ -3,7 +3,7 @@
 </template>
 
 <script>
-  import StoredResource from './components/learning-resources/StoredResource.vue';
+  import StoredResource from './components/learning-resources/StoredResources.vue';
 
   export default {
     components: {
