@@ -37,3 +37,21 @@
     }
   }
 </script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500&family=Forum&family=Open+Sans:wght@400;500;700&family=Roboto&display=swap');
+
+  *{
+    box-sizing: border-box;
+  }
+
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+</style>
