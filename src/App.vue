@@ -11,7 +11,7 @@
 </template>
 
 <script>
-  import LearningResources from './components/learning-resourses/LearningResourse.vue';
+  import LearningResources from './components/learning-resources/LearningResource.vue';
 
   export default {
     components: {
