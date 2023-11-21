@@ -19,7 +19,6 @@
             description: 'Learn to google...',
             link: 'https://google.com',
           },
-
         ]
       }
     }
