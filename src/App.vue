@@ -1,9 +1,16 @@
 <template>
-  <ul></ul>
+  <ul>
+    <learning-resources></learning-resources>
+  </ul>
 </template>
 
 <script>
+  import LearningResources from './components/learning-resourses/LearningResourse.vue';
+
   export default {
+    components: {
+      LearningResources,
+    },
     data() {
       return {
         storedResources: [
