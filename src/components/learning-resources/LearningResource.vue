@@ -18,3 +18,21 @@
     props: ['title', 'description', 'link'],
   }
 </script>
+
+<style scoped>
+  a {
+    text-decoration: none;
+    color: #FF8E72;
+  }
+
+  button {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #377771;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    background-color: #4ce0b3;
+    cursor: pointer;
+  }
+</style>
