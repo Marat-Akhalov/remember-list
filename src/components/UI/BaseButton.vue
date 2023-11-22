@@ -15,16 +15,14 @@
 
 <style scoped>
   button {
-    padding: 75rem 1.5rem;
-    border: 1px solid salmon;
+    padding: 0.75rem 1.5rem;
     color: whitesmoke;
-    background-color: #045257;
+    background-color: #377771;
     cursor: pointer;
   }
 
   button:hover,
   button:active {
-    border-color: blue;
     background-color: #0ea9b4;
   }
 
