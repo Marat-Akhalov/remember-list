@@ -56,7 +56,18 @@ import AddResource from './AddResource.vue';
     methods: {
       setSelectedTab(tab) {
         this.selectedTab = tab;
-      }
+      },
+      addResources(title, descr, url) {
+        const newResource = {
+          id: new Date().toISOString(),
+          title: title,
+          description: descr,
+          link: url,
+        };
+
+        this.storedResources.unshift(newResource);
+        this.selectedTab = 'stored-resources';
+      },
     }
   }
 </script>
