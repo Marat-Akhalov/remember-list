@@ -2,7 +2,9 @@
   <button
   :type="type"
   :class="mode"
-  ></button>
+  >
+    <slot></slot>
+  </button>
 </template>
 
 <script>
