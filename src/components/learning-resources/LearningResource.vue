@@ -20,6 +20,12 @@
 </script>
 
 <style scoped>
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   a {
     text-decoration: none;
     color: #FF8E72;
