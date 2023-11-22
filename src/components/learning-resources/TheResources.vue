@@ -1,21 +1,24 @@
 <template>
   <base-card>
     <base-button @click="setSelectedTab('stored-resources')">Stored Resources</base-button>
-    <base-button @click="setSelectedTab('add-recourse')">Add Recourses</base-button>
+    <base-button @click="setSelectedTab('add-resource')">Add Recourses</base-button>
   </base-card>
   <component :is="selectedTab"></component>
 </template>
 
 <script>
-import StoredResource from './StoredResources.vue';
+import StoredResources from './StoredResources.vue';
+import AddResource from './AddResource.vue';
+
 
   export default {
-    component: {
-      StoredResource,
+    components: {
+      StoredResources,
+      AddResource
     },
     data() {
       return {
-        selectedTab: 'stored-recourses',
+        selectedTab: 'stored-resources',
         storedResources: [
           {
             id: 'official-guide',
@@ -30,6 +33,11 @@ import StoredResource from './StoredResources.vue';
             link: 'https://google.com',
           },
         ]
+      }
+    },
+    provide() {
+      return {
+        resources: this.storedResources,
       }
     },
     methods: {
