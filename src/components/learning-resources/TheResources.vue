@@ -1,7 +1,12 @@
 <template>
   <base-card>
-    <base-button @click="setSelectedTab('stored-resources')">Stored Resources</base-button>
-    <base-button @click="setSelectedTab('add-resource')">Add Recourses</base-button>
+    <base-button
+    @click="setSelectedTab('stored-resources')"
+    :mode="storedResButtonMode"
+    >Stored Resources</base-button>
+    <base-button @click="setSelectedTab('add-resource')"
+    :mode="addResButtonMode"
+    >Add Recourses</base-button>
   </base-card>
   <component :is="selectedTab"></component>
 </template>
@@ -33,6 +38,14 @@ import AddResource from './AddResource.vue';
             link: 'https://google.com',
           },
         ]
+      }
+    },
+    computed: {
+      storedResButtonMode() {
+        return this.selectedTab === 'stored-resources' ? null : 'flat';
+      },
+      addResButtonMode() {
+        return this.selectedTab === 'add-resource' ? null : 'flat';
       }
     },
     provide() {
