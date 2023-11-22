@@ -29,7 +29,7 @@
 
   body {
     margin: auto;
-    padding: 0 25px;
+    padding: 15px 25px;
     font-family: 'Roboto', sans-serif;
   }
 </style>
