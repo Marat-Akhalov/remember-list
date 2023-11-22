@@ -51,6 +51,7 @@ import AddResource from './AddResource.vue';
     provide() {
       return {
         resources: this.storedResources,
+        addResource: this.addResources,
       }
     },
     methods: {
