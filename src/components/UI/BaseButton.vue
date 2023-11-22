@@ -16,4 +16,15 @@
     border-color: blue;
     background-color: #0ea9b4;
   }
+
+  .flat {
+    border: none;
+    color: #0ea9b4;
+    background-color: transparent;
+  }
+
+  .flat:hover,
+  .flat:active {
+    background-color: palevioletred;
+  }
 </style>
