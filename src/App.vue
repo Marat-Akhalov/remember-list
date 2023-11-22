@@ -1,6 +1,5 @@
 <template>
   <the-header title="Remember Me"></the-header>
-  <stored-resource :resources="storedResources"></stored-resource>
 </template>
 
 <script>
