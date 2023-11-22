@@ -16,6 +16,7 @@
 <style scoped>
   button {
     padding: 0.75rem 1.5rem;
+    border: 1px solid #0ea9b4;
     color: whitesmoke;
     background-color: #377771;
     cursor: pointer;
@@ -34,6 +35,7 @@
 
   .flat:hover,
   .flat:active {
-    background-color: palevioletred;
+    color: #fff;
+    background-color: #0ea9b4;
   }
 </style>
