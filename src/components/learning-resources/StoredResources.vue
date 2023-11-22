@@ -17,7 +17,7 @@ import LearningResources from './LearningResource.vue';
     components: {
       LearningResources,
     },
-    props: ['resources'],
+    inject: ['resources'],
   }
 </script>
 
